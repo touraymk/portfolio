@@ -5,7 +5,8 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
+  font-family: "Oswald", sans-serif;
 }
 
 h1,
@@ -15,7 +16,9 @@ h3 {
 }
 
 h1 {
+  color: var(--primary-color);
   font-size: 96px;
+  font-family: "Pacifico", cursive, sans-serif;
 }
 
 h2 {
@@ -30,6 +33,14 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.navigation-bar {
+  font-family: "Kablammo", cursive, sans-serif;
+}
+
+.collapse-navbar {
+  font-size: smaller;
 }
 
 .navigation-links {
@@ -52,6 +63,10 @@ p {
   color: white;
 }
 
+.primary-link:hover {
+  color: white;
+}
+
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -59,6 +74,10 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.secondary-link:hover {
+  color: var(--primary-color);
 }
 
 .homepage-link {
@@ -85,4 +104,18 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .portfolio-projects {
+    text-align: center;
+    width: 380px;
+  }
+
+ 
 }
